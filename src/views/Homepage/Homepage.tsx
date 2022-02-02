@@ -10,7 +10,6 @@ const Homepage: React.FC = () => {
   return (
     <>
       <div>Homepage {dateFormat(today(), "DD-MM-YYYY")}</div>
-      List Todos
       {data?.map((d) => (
         <>
           <h4>{d.id}</h4>
