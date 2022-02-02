@@ -8,10 +8,11 @@ import { ReactQueryDevtools } from "react-query/devtools";
 const queryClient = new QueryClient();
 
 function App({ Component, pageProps }: AppProps) {
+  const isDevEnv = process.env.NEXT_PUBLIC_ENV === "development";
   return (
     <QueryClientProvider client={queryClient}>
       <Component {...pageProps} />
-      <ReactQueryDevtools initialIsOpen />
+      {isDevEnv && <ReactQueryDevtools />}
     </QueryClientProvider>
   );
 }
