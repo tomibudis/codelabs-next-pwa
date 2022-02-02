@@ -1,3 +1,4 @@
+import React from "react";
 import Document, {
   Html,
   Head,
@@ -16,6 +17,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          {/* TODO: restructuring with object data */}
           <meta name="application-name" content="PWA App" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
@@ -60,11 +62,7 @@ class MyDocument extends Document {
             href="/icons/icon-144.png"
           />
           <link rel="manifest" href="/manifest.json" />
-          <link
-            rel="mask-icon"
-            href="/icons/icon-144.png"
-            color="#5bbad5"
-          />
+          <link rel="mask-icon" href="/icons/icon-144.png" color="#5bbad5" />
           <link rel="shortcut icon" href="/favicon.ico" />
 
           <meta name="twitter:card" content="summary" />
