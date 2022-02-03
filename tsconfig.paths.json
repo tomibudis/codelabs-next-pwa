@@ -6,6 +6,7 @@
       "#constants/*": ["./src/constants/*"],
       "#utils/*": ["./src/utils/*"],
       "#modules/*": ["./src/modules/*"],
+      "#views/*": ["./src/views/*"],
       "#src/*": ["./src/*"],
     }
   }

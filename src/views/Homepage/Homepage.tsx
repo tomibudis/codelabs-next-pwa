@@ -9,7 +9,8 @@ const Homepage: React.FC = () => {
   const { data } = useQueryTodo();
   return (
     <>
-      <div>Homepage {dateFormat(today(), "DD-MM-YYYY")}</div>
+      <div>Homepage</div>
+      <p>{dateFormat(today(), "DD-MM-YYYY")}</p>
       {data?.map((d) => (
         <>
           <h4>{d.id}</h4>

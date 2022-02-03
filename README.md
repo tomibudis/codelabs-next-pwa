@@ -1,94 +1,127 @@
 # Web Template
 
-Web Frontend Template
+This is the Next.js application for PWA Frontend Template at BTPN AROA
 
-## Getting started
+### Lighthouse
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+![Lighthouse Accessibility Badge](./lighthouse/lighthouse_accessibility.svg) ![Lighthouse Best Practices Badge](./lighthouse/lighthouse_best-practices.svg) ![Lighthouse Performance Badge](./lighthouse/lighthouse_performance.svg) ![Lighthouse PWA Badge](./lighthouse/lighthouse_pwa.svg) ![Lighthouse SEO Badge](./lighthouse/lighthouse_seo.svg)
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## uTests Coverage Status
+| Statements                  | Branches                | Functions                 | Lines             |
+| --------------------------- | ----------------------- | ------------------------- | ----------------- |
+| ![Statements](https://img.shields.io/badge/statements-77.12%25-red.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-54.23%25-red.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-87.09%25-yellow.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-81.11%25-yellow.svg?style=flat) |
 
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+## Prerequisite
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/digtalent.id/btpn/aroa/web-template.git
-git branch -M main
-git push -uf origin main
+node ^v14.17.0
+npm ^6.14.13
 ```
 
-## Integrate with your tools
+## What chore library inside this repository?
+```
+- jest & testing-library
+- styled-component
+- bootstrap 5
+- react-query
+- nextjs@latest
+- next-pwa
+- axios
+- dayjs
+```
 
-- [ ] [Set up project integrations](https://gitlab.com/digtalent.id/btpn/aroa/web-template/-/settings/integrations)
+## Development
 
-## Collaborate with your team
+pull repo
+`git@gitlab.com:digtalent.id/btpn/aroa/web-template.git`
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+**Run locally as dev mode**
+- npm run install
+- npm run dev
+- open http://localhost:3000
 
-## Test and Deploy
+**Build Mode (production)**
+- npm run install
+- npm run build
+- npm run start
+- open http://localhost:3000
 
-Use the built-in continuous integration in GitLab.
+**uTest**
+- npm run test
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+**build coverage badge**
+- npm run test:coverage
 
-***
+### Folder Structure
+```
+src
+├── components
+│   ├── Text
+│   │   ├── Text.tsx
+│   │   └── index.ts
+│   └── index.ts
+├── modules
+│   ├── Todo
+│   │   └── index.ts
+│   └── index.ts
+├── styles
+│   ├── config.scss
+│   └── globals.scss
+├── utils
+│   ├── axios.ts
+│   ├── date.ts
+│   ├── index.ts
+│   └── testUtils.tsx
+└── views
+    └── Homepage
+        ├── Homepage.tsx
+        ├── __test__
+        │   ├── Homepage.test.tsx
+        │   └── __snapshots__
+        │       └── Homepage.test.tsx.snap
+        └── index.ts
+```
 
-# Editing this README
+## Commit
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+All commit messages should conform to the [conventional commit format](https://www.conventionalcommits.org) and should use following syntax: `type(scope): subject`. While the type is mandatory, the scope is optional.
+Examples:
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+```
+docs: add README.md
+```
 
-## Name
-Choose a self-explaining name for your project.
+```
+fix(Header): fix padding issue
+```
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+```
+feat: create Home view
+```
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+Main types are `fix` and `feat`, however it is possible to also use:
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+- `chore`
+- `docs`
+- `style`
+- `refactor`
+- `perf`
+- `test`
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Additional information can be found [here](https://github.com/KWRI/engineering-resources/blob/develop/git/commit_standards.md)
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## Generate lighthouse
+1. build application with `npm run build`
+2. run app locally `npm run start`
+3. run `npx lighthouse-badges --urls http://localhost:3000 -o lighthouse`
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+### Code Reviews
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+**Things to take into account when doing a Code Review**:
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-- [ ] Apply utility Bootstrap 5
-- [ ] Config jest and testing-library
-- [ ] Update Readme repository
+- Components with more than 200 lines should be cause for "discussion" on MRs, exceptions to the rule are long but straight-forward forms
+- Each communication to the API must be connected through the resource abstraction.
+- Logic that can be re-used by other components must be located inside the provider folder
+- Components that are considerated global must be located in components(common) folder
+- Each new ts,tsx file that is considered critical should include unit testing
+- Use ES6+ features
