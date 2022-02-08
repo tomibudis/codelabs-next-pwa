@@ -11,7 +11,12 @@
 # next.js
 /.next/
 /out/
+/public/fallback-development.js
 
+/public/sw.js
+/public/sw.*
+
+/public/workbox-*
 # production
 /build
 

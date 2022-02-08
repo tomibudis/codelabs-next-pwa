@@ -5,6 +5,8 @@ import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 
+import { withLayout } from "#hocs/index";
+
 const queryClient = new QueryClient();
 
 function App({ Component, pageProps }: AppProps) {
@@ -17,4 +19,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-export default App;
+export default withLayout(App, { blacklist: ["login"] });

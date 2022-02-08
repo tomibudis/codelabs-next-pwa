@@ -11,12 +11,12 @@ const Homepage: React.FC = () => {
     <>
       <div>Homepage</div>
       <p>{dateFormat(today(), "DD-MM-YYYY")}</p>
-      {data?.map((d) => (
-        <>
+      {data?.map((d, index) => (
+        <div key={index}>
           <h4>{d.id}</h4>
           <Text>{d.title}</Text>
           <Text>{d.completed ? "completed" : "uncompleted"}</Text>
-        </>
+        </div>
       ))}
     </>
   );

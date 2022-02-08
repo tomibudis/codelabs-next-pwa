@@ -1,9 +1,7 @@
 @import "../../public/bootstrap/scss/functions";
 @import "../../public/bootstrap/scss/variables";
-
-// this for custom and replace some utilities variable from bootstrap v5
+@import "./colors.scss";
 @import "./variables";
-
 @import "../../public/bootstrap/scss/mixins";
 @import "../../public/bootstrap/scss/root";
 @import "../../public/bootstrap/scss/reboot";

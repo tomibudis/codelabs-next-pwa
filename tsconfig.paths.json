@@ -8,6 +8,8 @@
       "#modules/*": ["./src/modules/*"],
       "#views/*": ["./src/views/*"],
       "#src/*": ["./src/*"],
+      "#hocs/*": ["./src/hocs/*"],
+      "#types/*": ["./src/types/*"]
     }
   }
 }

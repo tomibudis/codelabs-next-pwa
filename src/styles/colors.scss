@@ -1,0 +1,39 @@
+$lightblue: #a2b8ff;
+$darkblue: #6276b4;
+$red: #f54b5e;
+$orange: #ef7d2c;
+$yellow: #f8c51c;
+$green: #37c491;
+$sherwoodgreen: #01482f;
+$riogrande: #c4d800;
+$lighgrey: #eee3e3;
+$cyan: #eee3e3;
+
+$dark: #2e2e2e;
+$neutral-dark-30: #2e2e2e4d;
+$neutral-dark-50: #2e2e2e80;
+$neutral-dark-70: #2e2e2eb3;
+$light: #f7f0f0;
+$neutral-light-30: #f7f0f04d;
+$neutral-light-50: #f7f0f080;
+$neutral-light-70: #f7f0f0b3;
+
+$primary: $orange;
+$secondary: $sherwoodgreen;
+$tertiary: $riogrande;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$disable: $lighgrey;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);

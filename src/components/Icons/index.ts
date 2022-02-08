@@ -9,4 +9,4 @@ export { default as IconLock } from "./IconLock";
 export { default as IconLockOpen } from "./IconLockOpen";
 export { default as IconSearch } from "./IconSearch";
 export { default as IconUser } from "./IconUser";
-export { default as IconFlagId } from "./icon-flag-id.webp";
+export { default as IconHome } from "./IconHome";
