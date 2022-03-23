@@ -14,7 +14,7 @@ const runCommand = (command) => {
 
 const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone https://github.com/tomibudis/codelabs-next-pwa.git ${repoName}`;
-const installDepsCommand = `cd ${repoName} && npm install`;
+const installDepsCommand = `cd ${repoName} && npm install && npm husky install`;
 
 console.log(`Init project ${repoName}`);
 const checkedOut = runCommand(gitCheckoutCommand);
