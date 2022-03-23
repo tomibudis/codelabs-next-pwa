@@ -8,7 +8,7 @@
       "~modules/*": ["./src/modules/*"],
       "~views/*": ["./src/views/*"],
       "~src/*": ["./src/*"],
-      "~hocs/*": ["./src/hocs/*"],
+      "~hooks/*": ["./src/hooks/*"],
       "~types/*": ["./src/types/*"]
     }
   }

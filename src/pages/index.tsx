@@ -2,13 +2,13 @@ import React from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Homepage from "../src/views/Homepage";
+import Homepage from "../views/homepage";
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Boilerplate BTPN Aroa</title>
+        <title>Codelabs Next PWA</title>
       </Head>
       <Homepage />
     </>

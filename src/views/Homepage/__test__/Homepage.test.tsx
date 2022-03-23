@@ -1,7 +1,7 @@
 import React from "react";
-import { render, screen } from "~utils/index";
+import { render, screen } from "~utils/test-utils";
 
-import Homepage from "../Homepage";
+import Homepage from "../homepage";
 
 describe("<Homepage />", () => {
   it("renders a homepage", () => {

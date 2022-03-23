@@ -1,11 +1,9 @@
-import "../src/styles/globals.scss";
+import "../../src/styles/globals.scss";
 
 import React from "react";
 import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
-
-import { withLayout } from "~hocs/index";
 
 const configQuery = {
   defaultOptions: {
@@ -27,4 +25,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-export default withLayout(App, { blacklist: ["login"] });
+export default App;

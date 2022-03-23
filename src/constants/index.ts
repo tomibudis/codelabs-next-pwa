@@ -1,1 +1,5 @@
-export { default as MENU } from "./menu";
+export const SIZE = {
+  NORMAL: "normal",
+  SMALL: "small",
+  EXTRA_SMALL: "extraSmall",
+};

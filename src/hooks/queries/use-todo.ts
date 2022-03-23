@@ -1,4 +1,4 @@
-import { axios } from "#utils/index";
+import axios from "~utils/axios";
 import { useQuery, UseQueryResult } from "react-query";
 
 interface ResponseTodo {
