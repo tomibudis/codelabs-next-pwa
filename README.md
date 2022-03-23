@@ -1,14 +1,15 @@
-# Web Template
+# PWA Boilerplate
 
-This is the Next.js application for PWA Frontend Template at BTPN AROA
+This is the Next.js application for PWA Frontend Template
 
 ### Lighthouse
 
 ![Lighthouse Accessibility Badge](./lighthouse/lighthouse_accessibility.svg) ![Lighthouse Best Practices Badge](./lighthouse/lighthouse_best-practices.svg) ![Lighthouse Performance Badge](./lighthouse/lighthouse_performance.svg) ![Lighthouse PWA Badge](./lighthouse/lighthouse_pwa.svg) ![Lighthouse SEO Badge](./lighthouse/lighthouse_seo.svg)
 
 ## uTests Coverage Status
-| Statements                  | Branches                | Functions                 | Lines             |
-| --------------------------- | ----------------------- | ------------------------- | ----------------- |
+
+| Statements                                                                         | Branches                                                                       | Functions                                                                           | Lines                                                                       |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | ![Statements](https://img.shields.io/badge/statements-77.12%25-red.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-54.23%25-red.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-87.09%25-yellow.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-81.11%25-yellow.svg?style=flat) |
 
 ## Prerequisite
@@ -19,6 +20,7 @@ npm ^6.14.13
 ```
 
 ## What chore library inside this repository?
+
 ```
 - jest & testing-library
 - styled-component
@@ -32,27 +34,29 @@ npm ^6.14.13
 
 ## Development
 
-pull repo
-`git@gitlab.com:digtalent.id/btpn/aroa/web-template.git`
-
 **Run locally as dev mode**
+
 - npm run install
 - npm run dev
 - open http://localhost:3000
 
 **Build Mode (production)**
+
 - npm run install
 - npm run build
 - npm run start
 - open http://localhost:3000
 
 **uTest**
+
 - npm run test
 
 **build coverage badge**
+
 - npm run test:coverage
 
 ### Folder Structure
+
 ```
 src
 ├── components
@@ -111,17 +115,7 @@ Main types are `fix` and `feat`, however it is possible to also use:
 Additional information can be found [here](https://github.com/KWRI/engineering-resources/blob/develop/git/commit_standards.md)
 
 ## Generate lighthouse
+
 1. build application with `npm run build`
 2. run app locally `npm run start`
 3. run `npx lighthouse-badges --urls http://localhost:3000 -o lighthouse`
-
-### Code Reviews
-
-**Things to take into account when doing a Code Review**:
-
-- Components with more than 200 lines should be cause for "discussion" on MRs, exceptions to the rule are long but straight-forward forms
-- Each communication to the API must be connected through the resource abstraction.
-- Logic that can be re-used by other components must be located inside the provider folder
-- Components that are considerated global must be located in components(common) folder
-- Each new ts,tsx file that is considered critical should include unit testing
-- Use ES6+ features
