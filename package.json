@@ -1,11 +1,25 @@
 {
   "name": "codelabs-next-pwa",
-  "private": true,
-  "author": {
-    "name": "tomi budi",
-    "email": "tomibudis@gmail.com",
-    "url": "hellotoms.com"
+  "version": "0.0.1",
+  "description": "This boilerplate is a starter nextjs app to building web platform",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomibudis/codelabs-next-pwa.git"
   },
+  "keywords": [
+    "boilerplate",
+    "next",
+    "app"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmibudis/codelabs-next-pwa/issues"
+  },
+  "homepage": "https://github.com/tomibudis/codelabs-next-pwa#readme",
+  "bin": {
+    "codelabs-next-pwa": "bin/cli.js"
+  },
+  "author": "tomibudis",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
