@@ -14,7 +14,8 @@
     "test": "jest",
     "test:ci": "jest --ci",
     "test:coverage": "istanbul-badges-readme",
-    "extract:colors": "node -r esm scripts/extract-sass-vars.js"
+    "extract:colors": "node -r esm scripts/extract-sass-vars.js",
+    "check:types": "npx tsc --noEmit"
   },
   "dependencies": {
     "axios": "^0.25.0",
