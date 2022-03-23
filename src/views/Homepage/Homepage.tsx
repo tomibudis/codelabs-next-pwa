@@ -1,9 +1,9 @@
 import React, { memo } from "react";
 
-import { dateFormat, today } from "#utils/index";
-import { useQueryTodo } from "#modules/index";
+import { dateFormat, today } from "~utils/index";
+import { useQueryTodo } from "~modules/index";
 
-import { Text } from "#components/index";
+import { Text } from "~components/index";
 
 const Homepage: React.FC = () => {
   const { data } = useQueryTodo();

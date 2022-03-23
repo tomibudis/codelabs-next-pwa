@@ -1,6 +1,11 @@
 {
-  "name": "next-pwa-boilerplate",
+  "name": "codelabs-next-pwa",
   "private": true,
+  "author": {
+    "name": "tomi budi",
+    "email": "tomibudis@gmail.com",
+    "url": "hellotoms.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
