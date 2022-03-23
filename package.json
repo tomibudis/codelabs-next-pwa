@@ -1,6 +1,6 @@
 {
   "name": "codelabs-next-pwa",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This boilerplate is a starter nextjs app to building web platform",
   "repository": {
     "type": "git",
@@ -29,7 +29,8 @@
     "test:ci": "jest --ci",
     "test:coverage": "istanbul-badges-readme",
     "extract:colors": "node -r esm scripts/extract-sass-vars.js",
-    "check:types": "npx tsc --noEmit"
+    "check:types": "npx tsc --noEmit",
+    "postinstall": "npx husky install"
   },
   "dependencies": {
     "axios": "^0.25.0",
@@ -67,7 +68,6 @@
     "istanbul-badges-readme": "^1.8.1",
     "jest": "^27.4.7",
     "lint-staged": "^12.3.3",
-    "node-sass": "^7.0.1",
     "prettier": "^2.5.1",
     "stylelint": "^14.3.0",
     "stylelint-config-standard": "^24.0.0",
