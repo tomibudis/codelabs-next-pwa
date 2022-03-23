@@ -12,13 +12,6 @@ This is the Next.js application for PWA Frontend Template
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | ![Statements](https://img.shields.io/badge/statements-77.12%25-red.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-54.23%25-red.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-87.09%25-yellow.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-81.11%25-yellow.svg?style=flat) |
 
-## Prerequisite
-
-```
-node ^v14.17.0
-npm ^6.14.13
-```
-
 ## What chore library inside this repository?
 
 ```
@@ -31,6 +24,23 @@ npm ^6.14.13
 - axios
 - dayjs
 ```
+
+## How to Install
+
+Prerequisite
+
+```
+node ^v14.17.0
+npm ^6.14.13
+```
+
+run script
+
+```
+npx tomibudis/codelabs-next-pwa {appName}
+```
+
+When init project successfully. follow the following command script to start
 
 ## Development
 
@@ -60,29 +70,35 @@ npm ^6.14.13
 ```
 src
 ├── components
-│   ├── Text
-│   │   ├── Text.tsx
-│   │   └── index.ts
 │   └── index.ts
-├── modules
-│   ├── Todo
-│   │   └── index.ts
+├── constants
 │   └── index.ts
+├── hooks
+│   ├── mutations
+│   └── queries
+│       └── use-todo.ts
+├── pages
+│   ├── _app.tsx
+│   ├── _document.tsx
+│   ├── _offline.tsx
+│   ├── api
+│   │   └── hello.ts
+│   └── index.tsx
 ├── styles
 │   ├── config.scss
 │   └── globals.scss
+├── types
 ├── utils
 │   ├── axios.ts
 │   ├── date.ts
-│   ├── index.ts
-│   └── testUtils.tsx
+│   └── test-utils.tsx
 └── views
-    └── Homepage
-        ├── Homepage.tsx
+    └── homepage
         ├── __test__
-        │   ├── Homepage.test.tsx
-        │   └── __snapshots__
-        │       └── Homepage.test.tsx.snap
+        │   ├── __snapshots__
+        │   │   └── Homepage.test.tsx.snap
+        │   └── homepage.test.tsx
+        ├── homepage.tsx
         └── index.ts
 ```
 
