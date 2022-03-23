@@ -34,41 +34,37 @@ class MyDocument extends Document {
           <meta name="msapplication-tap-highlight" content="no" />
           <meta name="theme-color" content="#000000" />
 
-          <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+          <link rel="apple-touch-icon" href="/icon-192x192.png" />
           <link
             rel="apple-touch-icon"
             sizes="152x152"
-            href="/icons/icon-192x192.png"
+            href="/icon-192x192.png"
           />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/icons/icon-192x192.png"
+            href="/icon-192x192.png"
           />
           <link
             rel="apple-touch-icon"
             sizes="167x167"
-            href="/icons/icon-192x192.png"
+            href="/icon-192x192.png"
           />
 
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/icons/icon-192x192.png"
+            href="/icon-192x192.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/icons/icon-192x192.png"
+            href="/icon-192x192.png"
           />
           <link rel="manifest" href="/manifest.json" />
-          <link
-            rel="mask-icon"
-            href="/icons/icon-192x192.png"
-            color="#5bbad5"
-          />
+          <link rel="mask-icon" href="/icon-192x192.png" color="#5bbad5" />
           <link rel="shortcut icon" href="/favicon.ico" />
 
           <meta name="twitter:card" content="summary" />
@@ -80,7 +76,7 @@ class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="http://localhost:3000/icons/icon-192x192.png"
+            content="http://localhost:3000/icon-192x192.png"
           />
           <meta name="twitter:creator" content="@Tomibudis" />
           <meta property="og:type" content="website" />
@@ -93,7 +89,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://localhost:3000" />
           <meta
             property="og:image"
-            content="http://localhost:3000/icons/icon-192x192.png"
+            content="http://localhost:3000/icon-192x192.png"
           />
         </Head>
         <body>

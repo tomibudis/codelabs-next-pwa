@@ -1,26 +1,15 @@
 {
-  "theme_color": "#0948be",
-  "background_color": "#ffffff",
-  "display": "browser",
-  "scope": "/",
-  "start_url": "/",
-  "name": "codelabs-next-pwa",
-  "short_name": "hellotoms",
-  "description": "Boilerplate next pwa by hellotoms",
+  "name": "Codelabs Next PWA",
+  "short_name": "codelabs-next-pwa",
   "icons": [
     {
       "src": "/icon-192x192.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-256x256.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-384x384.png",
-      "sizes": "384x384",
       "type": "image/png"
     },
     {
@@ -28,5 +17,10 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
 }
