@@ -8,17 +8,17 @@ This is the Next.js application for PWA Frontend Template
 
 ## uTests Coverage Status
 
-| Statements                  | Branches                | Functions                 | Lines             |
-| --------------------------- | ----------------------- | ------------------------- | ----------------- |
+| Statements                                                                         | Branches                                                                       | Functions                                                                           | Lines                                                                       |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | ![Statements](https://img.shields.io/badge/statements-77.12%25-red.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-54.23%25-red.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-87.09%25-yellow.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-81.11%25-yellow.svg?style=flat) |
 
 ## What chore library inside this repository?
 
 ```
 - jest & testing-library
-- bootstrap 5
-- react-query
-- nextjs@latest
+- tailwindcss
+- @tanstack/react-query
+- nextjs@12.x.x
 - next-pwa
 - axios
 - dayjs
@@ -29,8 +29,8 @@ This is the Next.js application for PWA Frontend Template
 Prerequisite
 
 ```
-node ^v14.17.0
-npm ^6.14.13
+node ^v18.13.0 (stable version)
+npm ^7.10.0
 ```
 
 run script
@@ -134,3 +134,7 @@ Additional information can be found [here](https://github.com/KWRI/engineering-r
 1. build application with `npm run build`
 2. run app locally `npm run start`
 3. run `npx lighthouse-badges --urls http://localhost:3000 -o lighthouse`
+
+## How to Publish NPM Registry
+
+https://docs.npmjs.com/creating-and-publishing-scoped-public-packages
