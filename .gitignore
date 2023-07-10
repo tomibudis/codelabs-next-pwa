@@ -15,6 +15,7 @@
 
 /public/sw.js
 /public/sw.*
+/public/fallback-*
 
 /public/workbox-*
 # production

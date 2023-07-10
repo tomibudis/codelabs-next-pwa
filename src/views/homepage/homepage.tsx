@@ -3,7 +3,7 @@ import React, { memo } from "react";
 const Homepage: React.FC = () => {
   return (
     <>
-      <div>Homepage</div>
+      <h1 className="text-3xl font-bold underline">Homepage</h1>
     </>
   );
 };
