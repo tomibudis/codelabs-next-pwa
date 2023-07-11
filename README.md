@@ -127,8 +127,6 @@ Main types are `fix` and `feat`, however it is possible to also use:
 - `perf`
 - `test`
 
-Additional information can be found [here](https://github.com/KWRI/engineering-resources/blob/develop/git/commit_standards.md)
-
 ## Generate lighthouse
 
 1. build application with `npm run build`
